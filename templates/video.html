@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drowsiness Detection</title>
+    <link rel="icon" href="../static/assets/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            display: inline-block;
+            margin: 20px auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .instructions {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drowsiness Detection System</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+    <div class="instructions">
+        <p>The system is monitoring your eyes in real-time.</p>
+        <p>If you close your eyes for an extended period, an alert will appear on the screen.</p>
+        <p>Make sure your face is well-lit and clearly visible to the camera.</p>
+    </div>
+</body>
+</html>

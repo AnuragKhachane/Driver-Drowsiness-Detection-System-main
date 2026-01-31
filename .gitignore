@@ -1,0 +1,9 @@
+miniconda.exe
+*.exe
+.env
+.venv/
+__pycache__/
+dataset
+XD design files
+shape_predictor_68_face_landmarks.dat
+cmake.msi
